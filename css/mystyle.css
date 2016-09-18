@@ -1,0 +1,49 @@
+#titleSection{
+  background-image: url("../images/city.jpg");
+  height: 700px;
+  width: auto;
+}
+body {
+  padding-top: 40px;
+  background-color: black;
+}
+#name{
+  color: white;
+}
+#About{
+  height: 700px;
+  width: auto;
+  background-color: #F6F6F6;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+#navbar{
+  color: black;
+}
+#Portfolio{
+  height: 700px;
+  width: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #A3C2C2;
+  color: white;
+}
+hr.black{
+   border: none;
+   height: 1.7px;
+   color: black;
+   background-color: black;
+}
+hr.white{
+   border: none;
+   height: 1.7px;
+   color: white;
+   background-color: white;
+}
+
+#info {
+  font-size: 13pt;
+}
+#skills{
+  font-size: 12pt;
+}

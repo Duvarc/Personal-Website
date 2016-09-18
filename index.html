@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Suhas Amireddy</title>
+			<link  rel = "stylesheet" href="./css/bootstrap.min.css">
+			<link  rel = "stylesheet" href="./css/bootstrap-theme.css">
+			<link  rel= "stylesheet" href="./css/bootstrap.css">
+			<link rel = "stylesheet" href="./css/mystyle.css">
+			<script src="./js/scrollspy.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+	</head>
+	<body class="scroll-area" data-spy="scroll" data-target=".navbar">
+	<!-- Will use this script for scrollin -->
+	<script>
+		$(document).on('click', 'a', function(event){
+			event.preventDefault();  // this will prevent url hash from showing up
+		$('html, body').animate({ //navbar covers part of section use -35
+				scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+		}, 500);
+	});
+	</script>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#titleSection"><b>Home</b></a></li>
+					<li><a href="#About"><b>About</b></a></li>
+					<li><a href="#Portfolio"><b>Portfolio</b></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id = "titleSection">
+		</br> </br> </br> </br> </br> </br> </br>
+			<div class = "container">
+				<div class = "col-lg-12.centered">
+					<h1 id = "name" class = "text-center"> <b> Suhas Amireddy </b> </h1>
+				</div>
+			</br>
+				<div class = "col-lg-12.centered" style= "text-align:center">
+					<button type="button" class="btn btn-success btn-lg" onclick="window.open('Resume.pdf');">Resume</button>
+					&nbsp; &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-lg"
+					onclick="window.open('https://www.linkedin.com/in/suhasamireddy');">LinkedIn</button>
+				</div>
+			</br>
+				<div class = "col-lg-12.centered" style= "text-align:center">
+					<button type = "button" class = "btn btn-primary btn-lg"
+					 onclick="window.open('http://wwww.facebook.com/suhasamireddy');">Facebook</button>
+		  </div>
+		</div>
+	</div>
+
+	<div id = "About" class = "container">
+	</br>
+		<div class = "col-md-2.centered">
+			<h1><b>About Me<b></h1>
+			<hr class="black">
+		</div>
+	</br> </br>
+		<div class = "row">
+			<div class = "col-sm-5 col-sm-offset-1" id="info">
+				<p>
+					 I am currently a second-year undergraduate student pursuing a Computer
+					 Science degree at the University of Maryland, College Park. I work
+					 part time as a software developer for my Universities IT department
+					 and I am usually working on a new android application or website in
+					 my free time. <br> <br>
+					 I am currently looking for a Summer 2017 internship in software
+					 development or cybersecurity. Please contact me by email
+					 (suhasamireddy2@gmail.com) if you have any opportunities availible.
+				</p>
+			</div>
+			<div class = "col-sm-4 col-sm-offset-1" id = "skills">
+				<h3><b>Skills</b></h3> <hr class="black">
+				<p><u>Languages</u><br>
+					Java, C, Ruby, HTML,CSS,JavaScript, SQL, Swift, Python, MATLAB <br><br>
+					<u>Tools</u><br>
+					Eclipse, Android Studio, Xcode, Oracle SQL Developer,
+					Bamboo, Maven
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id = "Portfolio" class = "container">
+		<div class = "col-md-2.centered" style = "text-align:center">
+			<h1><b>My Portfolio<b></h1>
+			<hr class = "white">
+		</br>
+		</div>
+			<div class="row">
+				<div class = "col-sm-4 col-sm-offset-1">
+					<button type="button" class="btn btn-warning btn-lg"
+					onclick="window.open('https://github.com/datbrown123');">GitHub</button>
+					</br> </br>
+					<p style = "font-size:12pt">
+					 	Code for all my projects including
+						this website is availible on Github </p>
+				</div>
+
+				<div class = "col-sm-6 col-sm-offset-1">
+					<h2 style="text-align:left"><b>Experience</b></h2>
+					<hr class="white">
+
+					<p>University of Maryland Division of Information Technology&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;June 2016- Present </p>
+						<b>Student Software Engineer</b> <br>
+					<ul>
+						<li>Developed new features for existing web applications using Spring Framework</li>
+						<li>Installed and configured applications on Tomcat Server</li>
+						<li>Created custom HTTP requests to retrieve data on projects within Bamboo</li>
+					</ul>
+				</div>
+
+			</div>
+
+	</div>
+	</body>
+</html>
